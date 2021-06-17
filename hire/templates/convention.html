@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Convention</title>
+</head>
+<body>
+    <p><a href="/logout">Logout</a> | <a href="/profile">Profile</a>
+    <h1>Convention #{{con.id}}</h1> 
+    <h4>Destination</h4>
+    <p>{{con.destination}}</p>
+    <h4>Start Date</h4>
+    <p>{{con.start_date}}</p>
+    <h4>End Date</h4>
+    <p>{{con.end_date}}</p>
+    <h4>Plan</h4>
+    <p>{{con.plan}}</p>
+    <a href="/{{con.id}}/edit">Edit</a> | <a href="/{{con.id}}/remove">Delete</a>
+</body>
+</html>

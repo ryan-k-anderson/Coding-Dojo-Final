@@ -12,8 +12,10 @@ def profile(request):
     if 'user_id' not in request.session:
         return redirect('/')
     this_user = User.objects.filter(id = request.session['user_id'])
+    this_con = Con.objects.all()
     context = {
-        'user': this_user[0] 
+        'user': this_user[0], 
+        'cons': this_con
     }
     return render (request, 'profile.html', context)
 
@@ -78,16 +80,16 @@ def create(request):
     return redirect('/profile')
 
 def con(request, con_id):
-    one_trip = Con.objects.get(id=con_id)
+    one_con = Con.objects.get(id=con_id)
     context = {
-    'trip': one_trip,
+    'con': one_con,
     }
-    return render(request, 'trip.html', context)
+    return render(request, 'convention.html', context)
 
-def edit(request, trip_id):
-    one_trip = Con.objects.get(id=trip_id)
+def edit(request, con_id):
+    one_con = Con.objects.get(id=con_id)
     context = {
-    'trip': one_trip
+    'con': one_con
     }
     return render(request, 'edit.html', context)
 

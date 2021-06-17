@@ -7,7 +7,7 @@
     <title>Edit</title>
 </head>
 <body>
-    <p><a href="/logout">Logout</a> | <a href="/dashboard">DashBoard</a>
+    <p><a href="/logout">Logout</a> | <a href="/profile">Profile</a>
     <h1>Edit your conventions</h1>
 
     {% if messages %}
@@ -17,7 +17,7 @@
         {% endfor %}
     </ul>
     {% endif %}
-    <form action="/{{con}.id}}/update" method='POST'>
+    <form action="/{{con.id}}/update" method='POST'>
         {% csrf_token %}
         <div class="form-group">
             <label for="destination">Destination</label>
