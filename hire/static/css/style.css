@@ -1,0 +1,12 @@
+body{
+    width: 970px;
+    background-image: -moz-linear-gradient();
+    align-items: center;
+    margin-left: 400px;
+}
+h1{
+    text-align: center;
+}
+a{
+    text-align: center;
+}
