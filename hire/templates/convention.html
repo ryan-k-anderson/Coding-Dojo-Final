@@ -12,6 +12,7 @@
 <body>
     <p><a href="/logout">Logout</a> | <a href="/profile">Profile</a>
     <h1>Convention #{{con.id}}</h1> 
+    <div id="trip">
     <h4>Destination</h4>
     <p>{{con.destination}}</p>
     <h4>Start Date</h4>
@@ -20,6 +21,7 @@
     <p>{{con.end_date}}</p>
     <h4>Plan</h4>
     <p>{{con.plan}}</p>
+    </div><!--End Trip-->
     <a href="/{{con.id}}/edit">Edit</a> | <a href="/{{con.id}}/remove">Delete</a>
 </body>
 </html>

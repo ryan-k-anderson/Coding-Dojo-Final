@@ -1,12 +1,27 @@
 body{
     width: 970px;
-    background-image: -moz-linear-gradient();
+    background-image: linear-gradient( #e90016, #5001af, #1200ec);
+    background-repeat: no-repeat;
     align-items: center;
     margin-left: 400px;
+    height:1000px ;
 }
 h1{
     text-align: center;
 }
 a{
     text-align: center;
+    background-color: white;
+    text-decoration: none;
+    padding: 2px;
+}
+form{
+    background-color: white;
+    padding: 20px;
+}
+#trip{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
 }
